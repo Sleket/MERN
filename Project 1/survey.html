@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Code Exercise Survey</title>
+        <link rel="stylesheet" href="stylesheet.css" type="text/css"/>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="http://www.libertymutual.com">Liberty Mutual Home</a></li>
+                    <li><a href="index.html">Developer Relations Home</a></li>
+                    <li><a href="survey.html">Developer Survey</a></li>
+                </ul>
+            </nav>
+        </header>
+        <form>
+            <h3>Name</h3>
+            <input type="text"
+            placeholder="Enter your name"
+            required>
+
+            <h3>Email</h3>
+            <input type="text"
+            placeholder="Enter your Email"
+            required
+            pattern="(.*)\@(.*)">
+
+            <h3>N-Number</h3>
+            <input type="text"
+            placeholder="Enter your N-Number"
+            required
+            pattern="n(.*)">
+
+            <h3>Age(optional)</h3>
+            <input type="number"
+            placeholder="Age"
+            min=18
+            max=101>
+
+            <h3>Which option best describes your current role as it relates to IT?</h3>
+            <input type="text"
+            placeholder="Select how your current role relates to IT"
+            required>
+
+            <h3>Would you recomment employment at Liberty Mutual to an IT professional?</h3>
+            <input type="radio" id=1>
+            <label for=1>Definitely</label>
+            <input type="radio" id=2>
+            <label for=2>Maybe</label>
+            <input type="radio" id=3>
+            <label for=3>Not sure</label>
+
+            <h3>What current technology at Liberty Mutual do you most feel should be phased out?</h3>
+            <select id="tech">
+                <option value="I don't work in IT but I want to">
+                <option value="I work in IT">
+                <option value="I am a manager of IT personnel">
+                <option value="Other">
+                </select>
+
+
+
+        </form>
+        <footer>
+            &copy;Copyright 2020 by Liberty Mutual. All rights reserved.
+        </footer>
+    </body>
+</html>
